@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Toucher</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+      <div class="header">
+          <h1>Number Thingy</h1>
+          <div class="container">
+          <div class="buttons">
+              <p>choose board size to start:</p>
+              <button onclick="changeSize(16,this)" class="button">16</button>
+              <button onclick="changeSize(25,this)" class="button">25</button>
+              <button onclick="changeSize(36,this)" class="button">36</button>
+          </div>
+          <div class="next-number hidden">
+              <p>the next number is <br/>
+              <span></span></p>
+          </div>
+         <div class="right-side">
+            <div class="timer">
+                <p>play time: <span>0.0</span> seconds</p>
+            </div>
+            <div class="wrong-hits">
+                <p>wrong hits : <span>0</span></p>
+            </div>
+         </div> 
+        </div>
+        </div>
+      </div>
+      <table class="table">
+      </table>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
